@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #050505, #1c1c1c);
+}
+main section {
+  width: 30%;
+  height: 100%;
+  background-color: black;
+  margin: auto;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+main section .container {
+  height: 100%;
+  width: 100%;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+main section .container .video-div {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+main section .container .video-div video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 2rem;
+  border: none;
+}
+main section .container .video-div #top-div {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 0rem 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+main section .container .video-div #top-div h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+main section .container .video-div #bottom-div {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+main section .container .video-div #bottom-div .top-div1 {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  gap: 1rem;
+}
+main section .container .video-div #bottom-div .top-div1 img {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  border: none;
+}
+main section .container .video-div #bottom-div .top-div1 h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+main section .container .video-div #bottom-div .top-div1 button {
+  height: 2rem;
+  width: 3.5rem;
+  padding: 0.2rem 0.5rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0.7rem;
+  font-size: 0.7rem;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main section .container .video-div #bottom-div .center-div1 {
+  height: 15%;
+  width: 100%;
+}
+main section .container .video-div #bottom-div .center-div1 p {
+  padding: 0rem 1rem;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+main section .container .video-div #bottom-div .bottom-div1 {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  background-color: transparent;
+}
+main section .container .video-div #bottom-div .bottom-div1 h1 {
+  font-weight: 400;
+}
+main section .container .video-div #right-div {
+  width: 15%;
+  height: 40%;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+main section .container .video-div #right-div h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+main section .container .video-div #right-div h1 h3 {
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+  text-align: center;
+}
+main section::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
