@@ -110,7 +110,7 @@ main section .container .video-div #bottom-div .top-div1 h4 {
 }
 main section .container .video-div #bottom-div .top-div1 button {
   height: 2rem;
-  width: 3.5rem;
+  width: 4rem;
   padding: 0.2rem 0.5rem;
   background-color: transparent;
   border: 1px solid #fff;
@@ -164,6 +164,7 @@ main section .container .video-div #right-div h1 h3 {
   margin-top: 0.5rem;
   font-size: 0.6rem;
   text-align: center;
+  font-family: monospace;
 }
 main section::-webkit-scrollbar {
   display: none;

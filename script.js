@@ -5,6 +5,8 @@ let reelsData = [
     likeCount: 12450,
     commentCount: 342,
     shareCount: 120,
+    isfollowed: false,
+    isLiked: true,
   },
   {
     username: "aisha_khan",
@@ -12,6 +14,8 @@ let reelsData = [
     likeCount: 9820,
     commentCount: 210,
     shareCount: 85,
+    isfollowed: true,
+    isLiked: true,
   },
   {
     username: "john_doe",
@@ -19,6 +23,8 @@ let reelsData = [
     likeCount: 15400,
     commentCount: 512,
     shareCount: 260,
+    isfollowed: true,
+    isLiked: true,
   },
   {
     username: "neha_verma",
@@ -26,6 +32,8 @@ let reelsData = [
     likeCount: 7600,
     commentCount: 198,
     shareCount: 64,
+    isfollowed: true,
+    isLiked: true,
   },
   {
     username: "aisha_khan",
@@ -33,6 +41,8 @@ let reelsData = [
     likeCount: 9820,
     commentCount: 210,
     shareCount: 85,
+    isfollowed: true,
+    isLiked: false,
   },
   {
     username: "john_doe",
@@ -40,6 +50,8 @@ let reelsData = [
     likeCount: 15400,
     commentCount: 512,
     shareCount: 260,
+    isfollowed: false,
+    isLiked: false,
   },
   {
     username: "neha_verma",
@@ -47,6 +59,8 @@ let reelsData = [
     likeCount: 7600,
     commentCount: 198,
     shareCount: 64,
+    isfollowed: false,
+    isLiked: false,
   },
   {
     username: "arjun_mehta",
@@ -54,10 +68,12 @@ let reelsData = [
     likeCount: 18320,
     commentCount: 689,
     shareCount: 310,
+    isfollowed: true,
+    isLiked: true,
   },
 ];
 let sum = "";
-reelsData.forEach(function (dets, idx) {
+reelsData.forEach(function (dets) {
   sum += `<div class="container">
           <div class="video-div">
             <video src="media/${dets.video}"></video>
@@ -72,7 +88,7 @@ reelsData.forEach(function (dets, idx) {
                   alt=""
                 />
                 <h4>${dets.username}</h4>
-                <button>Follow</button>
+                <button>${dets.isfollowed ? "unfollow" : "Follow"}</button>
               </div>
               <div class="center-div1">
                 <p>
@@ -89,7 +105,9 @@ reelsData.forEach(function (dets, idx) {
             </div>
             <div id="right-div">
               <h1>
-                <i id="like" class="ri-poker-hearts-line"><h3>${dets.likeCount}</h3></i>
+                <i id="like" class="ri-poker-hearts-line"><h3>${
+                  dets.likeCount
+                }</h3></i>
               </h1>
               <h1>
                 <i class="ri-chat-3-line"><h3>${dets.commentCount}</h3></i>
